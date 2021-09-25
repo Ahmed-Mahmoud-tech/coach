@@ -1,11 +1,12 @@
 import './App.css';
-import Home from "./views/home"
+import Home from './views/Home/Home.jsx';
+import Welcome from './views/Wellcome/Welcome';
 
 function App() {
 
   return (
     <div className="App">
-      <Home/>
+      <Welcome/>
     </div>
   );
 }

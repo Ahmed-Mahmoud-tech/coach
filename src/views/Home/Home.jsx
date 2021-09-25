@@ -1,5 +1,5 @@
-import Main from "../data/main";
-import "./home.scss";
+import Main from "../../data/main";
+import "./Home.scss";
 
 const Home = () => {
 
