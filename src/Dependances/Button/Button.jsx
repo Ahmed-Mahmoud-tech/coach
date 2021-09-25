@@ -1,10 +1,10 @@
 import React from 'react'
 import { Fragment } from 'react'
 
-function Button() {
+function Button(props) {
     return (
         <Fragment>
-            <button> Sign Up </button>
+            <button onClick={props.thefun}> {props.buttonName} </button>
         </Fragment>
     )
 }
