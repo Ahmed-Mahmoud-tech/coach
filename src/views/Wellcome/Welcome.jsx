@@ -8,13 +8,15 @@ function Welcome() {
     const switchfun = () => {
         setcompswitch(!compswitch)
     }
+    
+    
+
     return (
         <section>
             <h1>wellcome to your training suit</h1>
             <p>description</p>
             {compswitch ? <SingUp /> : <SignIn />}
             <Button buttonName = {compswitch ? "signup" : "signin"} thefun = {switchfun} />
-            
         </section>
     )
 }
