@@ -1,5 +1,5 @@
 import React  from 'react'
-import Button from '../Button/Button'
+import Button from '../../Dependances/Button/Button';
 import {useHistory} from 'react-router-dom'
 
 
@@ -7,14 +7,12 @@ function SignIn() {
 
     let  history = useHistory();
     const toHome = (e)=>{
-            e.preventDefault ;
+            e.preventDefault() ;
             history.push("/home") ;
     
     }
         
         
-    
-    
     return (
         <form>
             <label htmlFor="mail"> Enter your mail </label>

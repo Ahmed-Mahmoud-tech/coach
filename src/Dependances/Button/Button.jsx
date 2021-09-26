@@ -6,18 +6,9 @@ function Button(props) {
     
     return (
         <Fragment>
-            <button onClick={props.c}> {props.buttonName}  </button>
+            <button onClick={props.thefun}> {props.buttonName}  </button>
         </Fragment>
     )
-}
-
-export function input(){
-    return(
-        <Fragment>
-            <input type="submit"  />
-        </Fragment>
-    )
-
 }
 
 export default Button

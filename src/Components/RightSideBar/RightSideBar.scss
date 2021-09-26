@@ -1,0 +1,38 @@
+aside{
+    position: absolute;
+    right: 0;
+    width: 280px;
+    text-align: center;
+    background-color: #666;
+    color: #fff;
+    padding: 20px;
+    top: 53px;
+    z-index: 8;
+    .calculator{
+        font-weight: bold;
+        padding: 5px 10px;
+        cursor: pointer;
+        border: 1px solid;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    .progress{
+        font-weight: bold;
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 5px;
+        .chart{
+            height: 140px;
+            background-color: #eee;
+            margin: 10px;
+        }
+    }
+    table{
+        font-size: 12px;
+        border: 1px solid;
+        margin-bottom: 20px;
+        th , td{
+            border: 1px solid;
+        }
+    }
+}
