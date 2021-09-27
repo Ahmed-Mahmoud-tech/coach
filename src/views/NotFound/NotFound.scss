@@ -1,0 +1,33 @@
+.not-found{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    .not-found-holder{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 300px;
+        width: 350px;
+        padding: 10px;
+        text-align: center;
+        background-color: #eee;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h2{
+
+        }
+        p{
+            font-size: 12px;
+            font-weight: 300;
+            flex-grow: .5;
+        }
+        .buttons{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+}
