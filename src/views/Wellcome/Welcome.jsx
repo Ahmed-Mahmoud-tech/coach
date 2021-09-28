@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import SignUp from '../../Components/SignUp/SignUp'
 import Button from '../../Dependances/Button/Button'
 import SignIn from '../../Components/SignIn/SignIn'
+import { Link } from 'react-router-dom'
 
 function Welcome() {
     const [compswitch, setcompswitch] = useState(false)
