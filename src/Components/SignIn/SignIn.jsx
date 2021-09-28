@@ -17,7 +17,7 @@ function SignIn() {
         <form>
             <label htmlFor="mail"> Enter your mail </label>
             <input id='mail' type="email" placeholder='Your Email' required/>
-            <label htmlFor="password"> type your password </label>
+            <label htmlFor="password"> type your passwordll </label>
             <input id='password' type="password" placeholder='Your Password' required/>
             <label htmlFor="check">Remember Me</label>
             <input id='check' type="checkbox"  />
