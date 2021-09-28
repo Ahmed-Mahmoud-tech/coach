@@ -1,9 +1,7 @@
 import React, {useState} from 'react'
-import SignIn from '../../Dependances/SignIn/SignIn'
-import SingUp from '../../Dependances/SignUp/SignUp'
+import SignUp from '../../Components/SignUp/SignUp'
 import Button from '../../Dependances/Button/Button'
-import {Link} from 'react-router-dom'
-
+import SignIn from '../../Components/SignIn/SignIn'
 
 function Welcome() {
     const [compswitch, setcompswitch] = useState(false)
@@ -17,7 +15,7 @@ function Welcome() {
         <section>
             <h1>wellcome to your training suit</h1>
             <p>description</p>
-            {compswitch ? <SingUp /> : <SignIn />}
+            {compswitch ? <SignUp /> : <SignIn />}
             <Button buttonName = {compswitch ? "signup" : "signin"} thefun = {switchfun} />
             <Link to="/home" >home</Link>
             

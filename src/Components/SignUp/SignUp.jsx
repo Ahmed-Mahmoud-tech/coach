@@ -1,6 +1,6 @@
 import React from 'react'
 
-function SingUp() {
+function SignUp() {
     return (
         <form>
             <label htmlFor="name"> Enter your name </label>
@@ -15,4 +15,4 @@ function SingUp() {
     )
 }
 
-export default SingUp
+export default SignUp

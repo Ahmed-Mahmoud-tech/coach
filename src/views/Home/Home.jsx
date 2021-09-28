@@ -1,22 +1,13 @@
-import Main from "../../data/main";
 import "./Home.scss";
+import Header from "../../Components/Header/Header";
+import RightSideBar from "../../Components/RightSideBar/RightSideBar";
 
 const Home = () => {
 
     return (
         <div>
-            <ul>
-            {
-                Main.blog.map((item)=>{
-                    return (<>
-                    <li>{item.name}</li>
-                    <li>{item.title}</li>
-                    <li>{item.description}</li>
-                    </>)
-                })
-            }
-            </ul>
-
+            <Header />
+            <RightSideBar />
         </div>
     )
 }
