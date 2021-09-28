@@ -7,7 +7,8 @@ function SignIn() {
 
     let  history = useHistory();
     const toHome = (e)=>{
-            e.preventDefault ;
+            e.preventDefault();
+            alert("sdf")
             history.push("/home") ;
     
     }
