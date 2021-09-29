@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './Wellcome.scss'
 import SignUp from '../../Components/SignUp/SignUp'
 import Button from '../../Dependances/Button/Button'
 import SignIn from '../../Components/SignIn/SignIn'
@@ -12,11 +13,11 @@ function Welcome() {
     
 
     return (
-        <section>
-            <h1>wellcome to your training suit</h1>
-            <p>description</p>
+        <section className="wellcome">
+            <h1>wellcome to your <span>training suit</span> community </h1>
+            <p>This is the right place to achieve your goal !</p>
             {compswitch ? <SignUp /> : <SignIn />}
-            <Button buttonName = {compswitch ? "signup" : "signin"} thefun = {switchfun} />
+            <Button buttonName = {compswitch ? "signin" : "signup"} thefun = {switchfun} />
         </section>
     )
 }
