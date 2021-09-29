@@ -33,6 +33,7 @@ function SignIn() {
     };        
         
     return (
+<<<<<<< HEAD
         <div className='form'>
             <div className='title'>Sign In</div>
             <div className='inputs'>
@@ -59,6 +60,18 @@ function SignIn() {
                 </form>
             </div>
         </div>
+=======
+        <form>
+            <label htmlFor="mail"> Enter your mail </label>
+            <input id='mail' type="email" placeholder='Your Email' required/>
+            <label htmlFor="password"> type your passwordll </label>
+            <input id='password' type="password" placeholder='Your Password' required/>
+            <label htmlFor="check">Remember Me</label>
+            <input id='check' type="checkbox"  />
+            <a href="#">Forget my password</a>
+            <Button buttonName = ' Submit' thefun={toHome} />
+        </form>
+>>>>>>> 1c633f6c2a4b217bf92c261445d26b849e483d9e
     )
 }
 
