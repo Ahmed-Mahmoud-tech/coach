@@ -1,8 +1,16 @@
-import React , {useState} from 'react'
+import React , {useState, useContext} from 'react'
 import Button from '../../Dependances/Button/Button'
 import './PostPopup.scss'
+import {addblog} from '../../data/Blogs';
+import {BlogContext} from '../Content/Content';
+
 
 function PostPopup(props) {
+
+    const updatedblog = useContext(BlogContext)
+
+
+
     const [title , setTitle] = useState('');
     const [body, setBody] = useState('');
     const hidden = (e)=>{
@@ -24,6 +32,8 @@ function PostPopup(props) {
         })
         .then(()=>{
             hidden()
+            addblog([blog])
+            updatedblog.newmethod()
         })
 
     }

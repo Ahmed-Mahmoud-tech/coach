@@ -1,16 +1,33 @@
-import React ,{useState , useEffect} from 'react'
+import React ,{useState , useEffect, useContext} from 'react'
+import Blogs, {addblog} from '../../data/Blogs';
+import {BlogContext} from '../Content/Content';
+
+
 
 function BlogHolder() {
+//...updatedblog.blog
+    const updatedblog = useContext(BlogContext)
     const [blogs, setBlogs] = useState([])
+
     useEffect(()=>{
         fetch('http://localhost:8000/blogs')
         .then(res =>{
             return res.json();
         })
         .then(data =>{
-            setBlogs(data)
+            //setBlogs(data)
+            console.log(blogs);
+            addblog(data)
+            setBlogs(updatedblog.blog)
+            // console.log(updatedblog.blog);
         })
-        
+
+
+        updatedblog.newmethod = () => {
+            setBlogs([...updatedblog.blog])
+            console.log(updatedblog.blog)
+        }
+
     },[])
 
     const handelDelete = (id)=>{

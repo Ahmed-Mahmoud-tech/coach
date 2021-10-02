@@ -1,24 +1,3 @@
 {
-  "blogs": [
-    {
-      "title": "In The Name Of Allh",
-      "body": "lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , ",
-      "id": 1
-    },
-    {
-      "title": "au nom d'allah",
-      "body": "lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , ",
-      "id": 2
-    },
-    {
-      "title": "بسم الله",
-      "body": "lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , lorem , ",
-      "id": 3
-    },
-    {
-      "title": "hi",
-      "body": "i'm a new coach !",
-      "id": 4
-    }
-  ]
+  "blogs": []
 }
