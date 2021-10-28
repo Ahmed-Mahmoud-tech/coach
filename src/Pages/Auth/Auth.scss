@@ -1,0 +1,45 @@
+/* auth page style */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  width: 50%;
+  min-width: 300px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.rightpart {
+  background-image: url("../../Assests/Images/login_bg.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.switchContainer {
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 90%;
+  margin: 30px auto;
+  max-width: 400px;
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+span.error{
+    color:red;
+    font-size: 11px;
+    display: block;
+    margin-bottom: 10px;
+}

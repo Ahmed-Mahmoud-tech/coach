@@ -1,14 +1,21 @@
-import './App.css';
-import Home from './views/Home/Home.jsx';
-import Welcome from './views/Wellcome/Welcome';
+  import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+  import './App.scss';
 
-function App() {
+  import Auth from './Pages/Auth/Auth';
+  import Profile from './Pages/Profile/Profile';
+  
+  function App() {
+    return (
+      <div className="App">
+        <Router>
+          <Switch>
+            <Route path="/" component={Auth} exact/>
+            <Route path="/profile" component={Profile}/>
+          </Switch>
+        </Router>
+      </div>
+    );
+  }
+  
 
-  return (
-    <div className="App">
-      <Welcome/>
-    </div>
-  );
-}
-
-export default App;
+  export default App;
