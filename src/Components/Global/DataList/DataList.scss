@@ -1,0 +1,31 @@
+.options {
+    max-width: 100%;
+    max-height: 128px;
+    overflow: auto;
+    position: absolute;
+    text-align: center;
+    border: 1px solid #bbbbbb;
+    background: #f1f1f1;
+}
+
+.options span {
+    display: block;
+    border-bottom: 1px solid #cfcece;
+    width: 70%;
+    margin: auto;
+    cursor: pointer;
+}
+
+input{
+    max-width: 100%;
+}
+
+.dataListError {
+    position: absolute;
+    background-color: #ebe6e6;
+    width: 100%;
+    text-align: center;
+    line-height: 14px;
+    word-break: break-all;
+    padding: 0 10px;
+}
