@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
-import './App.scss';
+import './app.css';
 
 import Auth from './Pages/Auth/Auth';
 import Home from './Pages/Home/Home';
@@ -18,6 +18,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
